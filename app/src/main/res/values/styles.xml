@@ -1,0 +1,181 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/bopensans</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="linearLayout" parent="AppTheme">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="linearLayoutHorizontal" parent="linearLayout">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="linearLayoutVertical" parent="linearLayout">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="llvBGWhite" parent="linearLayoutVertical">
+        <item name="android:background">@drawable/bg_white_round</item>
+        <item name="android:padding">@dimen/twenty</item>
+        <item name="android:layout_margin">@dimen/twenty</item>
+    </style>
+
+    <style name="DetailBTextTheme" parent="DetailTextThemeParent">
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="DetailRTextTheme" parent="DetailTextThemeParent">
+        <item name="android:textSize">@dimen/list_text_size</item>
+    </style>
+
+    <style name="DetailTextThemeParent" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="HeadingTextTheme" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_size_head</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="GreetingsHeadTheme" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_size_head</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="ColoredText" parent="AppTheme">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_head</item>
+    </style>
+
+    <style name="whiteTextTheme" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="EditTextStyle" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:color">@android:color/black</item>
+    </style>
+
+    <style name="textInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="android:paddingBottom">@dimen/eight</item>
+    </style>
+
+    <style name="editText" parent="textInputLayout">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:padding">@dimen/fifteen</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="lineStyle" parent="AppTheme">
+        <item name="android:background">@color/grey</item>
+        <item name="android:layout_marginTop">@dimen/ten</item>
+        <item name="android:layout_marginBottom">@dimen/ten</item>
+        <item name="android:layout_marginLeft">@dimen/five</item>
+        <item name="android:layout_marginRight">@dimen/five</item>
+        <item name="android:layout_marginStart">@dimen/five</item>
+        <item name="android:layout_marginEnd">@dimen/five</item>
+    </style>
+
+    <style name="buttonStyle" parent="AppTheme">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="buttonStyleEnable" parent="buttonStyle">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="buttonLineStyle" parent="buttonStyle">
+        <item name="android:background">@drawable/bg_line_button</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="buttonStyleDisable" parent="buttonStyle">
+        <item name="android:background">@drawable/bg_button_disable</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="textView" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="textViewBlack" parent="textView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="checkbox" parent="textViewBlack">
+        <item name="android:layout_margin">@dimen/five</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="checkbox_big_text" parent="textViewBlack">
+        <item name="android:padding">@dimen/five</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/five</item>
+    </style>
+
+    <style name="textViewColor" parent="textView">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="textViewRed" parent="textView">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="textViewHead" parent="AppTheme">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/thirty_text_size</item>
+    </style>
+
+    <style name="textViewBlackHead" parent="textViewHead">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="textViewWhiteHead" parent="textViewHead">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textViewColorHead" parent="textViewHead">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="uploadIconStyle" parent="AppTheme">
+        <item name="android:paddingTop">85dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_margin">@dimen/fifteen</item>
+        <item name="android:background">@drawable/ic_bg_upload</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">10dp</item>
+    </style>
+</resources>
