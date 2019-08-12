@@ -15,14 +15,12 @@
         app:contentPadding="@dimen/twenty">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/xCcRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:padding="@dimen/twenty">
 
             <TextView
-                android:id="@+id/textView6"
                 style="@style/textViewHead"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

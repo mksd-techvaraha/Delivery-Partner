@@ -18,7 +18,6 @@
         app:contentPadding="@dimen/twenty_five">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/xCcLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -106,7 +105,6 @@
                 app:layout_constraintTop_toBottomOf="@id/xTILPassword" />
 
             <TextView
-                android:id="@+id/textView5"
                 style="@style/textViewBlack"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
