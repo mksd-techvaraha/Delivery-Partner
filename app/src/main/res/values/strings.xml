@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Delivery partner - SuntheMart</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="profile">Profile</string>
+    <string name="my_cash">My Cash</string>
+    <string name="delivery_history">Delivery History</string>
+    <string name="communicate">Communicate</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="call_us">Call Us</string>
+    <string name="notifications">Notifications</string>
+    <string name="order_list">Order List</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="call">Call</string>
+    <string name="hey_you">Hey! you have to deliver here</string>
+    <string name="dummy_address">no. 95 , 2nd cross, thimmaya reddy layout Murugeshpalya</string>
+    <string name="hey_mksd">Hey MKSD</string>
+    <string name="mayank0392_gmail_com">mayank0392@gmail.com</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="want_to_become_a_partner">Want to become a partner?</string>
+    <string name="click_here">Click here</string>
+    <string name="namaskara_npartner">Namaskara\nPartner !</string>
+    <string name="become_a_partner_now">Become a Partner Now!</string>
+    <string name="already_a_partner">Already a Partner?</string>
+    <string name="click_here_to_login">Click here to Login</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="do_you_have_a_driving_licence">Do you have a Driving Licence ?</string>
+    <string name="do_you_have_a_aadhar_card">Do you have a Aadhar card ?</string>
+    <string name="register">Register</string>
+    <string name="back_button">back button</string>
+    <string name="lets_get_started_with_your_kyc">Lets get started with Your Kyc</string>
+    <string name="logo">logo</string>
+    <string name="note_please_keep_aadhar_card_and_driving_licence_ready_with_you">Note* : Please keep Aadhar card and
+        Driving Licence Ready with you
+    </string>
+    <string name="identity_proof">Identity Proof</string>
+    <string name="taskon">taskon</string>
+    <string name="arrow">arrow</string>
+    <string name="upload_document">Upload Document</string>
+    <string name="drivers_licence_proof">Drivers Licence Proof</string>
+    <string name="declaration">Declaration</string>
+    <string name="declaration_note">I hereby declare that the details furnished above are true and correct to the best
+        of my knowledge and belief and I undertake to inform you of any changes therein, immediately.
+    </string>
+    <string name="submit">Submit</string>
+    <string name="name_as_on_aadhar_card">Name (As on Aadhar Card)</string>
+    <string name="enter_your_aadhar_number">Enter your Aadhar number</string>
+    <string name="upload_front_side">Upload front side</string>
+    <string name="upload_back_side">Upload Back Side</string>
+    <string name="confirm">Confirm</string>
+    <string name="order_number">Order Number</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="delivery_before">Delivery Before</string>
+    <string name="dummy_address_2">#90/2, Purva Apt. Flat No C1, 13th Floor,Ganga Nagar, R T Nagar - 560064</string>
+    <string name="see_details">See Details</string>
+    <string name="home_page_note">Choose orders from below to start you day</string>
+    <string name="start_delivery">Start Delivery</string>
+    <string name="get_direction">Get Direction</string>
+    <string name="your_stock_point">Your stock point</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="call_sp">Call SP</string>
+    <string name="stock_point_name">Stock Point\nName</string>
+    <string name="sp_address">SP Address</string>
+    <string name="greetings">Great!!\nlets do another one</string>
+    <string name="options">options</string>
+    <string name="delivery_partner_permission">delivery partner permission</string>
+    <string name="title_activity_delivery_maps">Map</string>
+    <string name="icon">icon</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="driving_number">Valid Driving Number</string>
+    <string name="aadhar_number">Valid Aadhar Number</string>
+    <string name="pincode">Pincode</string>
+    <string name="total">Total :</string>
+    <string name="please_verification_note">Please note down this Verification Id</string>
+    <string name="greetings_have_a_nice_day">Have A Nice Day</string>
+
+    <string name="preferences" translatable="false">preferences</string>
+    <string name="reset_preference" translatable="false">reset preference</string>
+    <string name="reset_and_show" translatable="false">Reset and show</string>
+    <string name="set_and_show" translatable="false">Set and Show</string>
+
+    <string name="auth_id_pref" translatable="false">authId</string>
+    <string name="agent_id_pref" translatable="false">agentId</string>
+    <string name="fName_pref" translatable="false">fName</string>
+    <string name="lName_pref" translatable="false">lName</string>
+    <string name="phone_number_pref" translatable="false">phoneNumber</string>
+    <string name="email_id_pref" translatable="false">emailId</string>
+    <string name="pincode_pref" translatable="false">pincode</string>
+    <string name="ok">Ok</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="item">Item</string>
+    <string name="cash_note">Please collect cash from the customer</string>
+    <string name="collect">Collect</string>
+</resources>

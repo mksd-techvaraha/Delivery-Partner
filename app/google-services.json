@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "65212182051",
+    "firebase_url": "https://sunthemart-mart.firebaseio.com",
+    "project_id": "sunthemart-mart",
+    "storage_bucket": "sunthemart-mart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65212182051:android:ca33b74374311227",
+        "android_client_info": {
+          "package_name": "com.example.sunthemart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65212182051-3mica9nrv7jrf1d52eshne8p4c4g7ofp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sunthemart",
+            "certificate_hash": "05bfcff4d1ba6ef70a9e6428c4b8bffad19c40d8"
+          }
+        },
+        {
+          "client_id": "65212182051-u9jtdj9jfpitbidesdo9v4a2c83uic7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFAXPA--jc9Rlu7mZztKBnbZ2UL8f3Brs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65212182051-u9jtdj9jfpitbidesdo9v4a2c83uic7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65212182051:android:9fceed3f14ea5a90",
+        "android_client_info": {
+          "package_name": "com.sunthemart.deliverypartner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65212182051-p3a2gkjtgesmhpu69im3rhofk0bb93qp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sunthemart.deliverypartner",
+            "certificate_hash": "05bfcff4d1ba6ef70a9e6428c4b8bffad19c40d8"
+          }
+        },
+        {
+          "client_id": "65212182051-u9jtdj9jfpitbidesdo9v4a2c83uic7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFAXPA--jc9Rlu7mZztKBnbZ2UL8f3Brs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65212182051-u9jtdj9jfpitbidesdo9v4a2c83uic7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65212182051:android:8a5aba7e172eef99",
+        "android_client_info": {
+          "package_name": "com.sunthemart.registrationauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65212182051-61p33olhetcebapa3c4nlnlakdrhfp7m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sunthemart.registrationauth",
+            "certificate_hash": "05bfcff4d1ba6ef70a9e6428c4b8bffad19c40d8"
+          }
+        },
+        {
+          "client_id": "65212182051-u9jtdj9jfpitbidesdo9v4a2c83uic7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFAXPA--jc9Rlu7mZztKBnbZ2UL8f3Brs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65212182051-u9jtdj9jfpitbidesdo9v4a2c83uic7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

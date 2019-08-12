@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/xCcKyc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/ten"
+    android:orientation="vertical">
+
+    <!-- adjust constraints -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/ic_btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/textViewHead"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lets_get_started_with_your_kyc"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_head"
+        app:layout_constraintEnd_toStartOf="@id/imageView3"
+        app:layout_constraintStart_toEndOf="@id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logo"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/textViewRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten"
+        android:gravity="center"
+        android:text="@string/note_please_keep_aadhar_card_and_driving_licence_ready_with_you"
+        android:textAlignment="gravity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView7" />
+
+
+    <ImageView
+        android:id="@+id/xIvIdentityProof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten"
+        android:contentDescription="@string/taskon"
+        android:src="@drawable/ic_task_on"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        style="@style/textViewBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten"
+        android:text="@string/identity_proof"
+        app:layout_constraintStart_toEndOf="@id/xIvIdentityProof"
+        app:layout_constraintTop_toBottomOf="@id/textView8" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/arrow"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/xIvIdentityProof" />
+
+    <Button
+        android:id="@+id/xBtnUploadIdentityProof"
+        style="@style/buttonStyleEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty"
+        android:padding="@dimen/five"
+        android:text="@string/upload_document"
+        app:layout_constraintStart_toEndOf="@id/imageView5"
+        app:layout_constraintTop_toBottomOf="@id/textView9" />
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/taskon"
+        android:src="@drawable/ic_task_off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView10"
+        style="@style/textViewBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drivers_licence_proof"
+        app:layout_constraintStart_toEndOf="@id/imageView6"
+        app:layout_constraintTop_toBottomOf="@id/xBtnUploadIdentityProof" />
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/arrow"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView6" />
+
+    <Button
+        android:id="@+id/xBtnUploadDlProof"
+        style="@style/buttonStyleDisable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty"
+        android:padding="@dimen/five"
+        android:text="@string/upload_document"
+        app:layout_constraintStart_toEndOf="@id/imageView7"
+        app:layout_constraintTop_toBottomOf="@id/textView10" />
+
+
+    <ImageView
+        android:id="@+id/xIvDeclaration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/taskon"
+        android:src="@drawable/ic_task_off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView7" />
+    <!-- change drawables of imageView to ic_task_on when it comes to his step -->
+
+    <TextView
+        android:id="@+id/textView11"
+        style="@style/textViewBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/declaration"
+        app:layout_constraintStart_toEndOf="@id/xIvDeclaration"
+        app:layout_constraintTop_toBottomOf="@id/xBtnUploadDlProof" />
+
+
+    <CheckBox
+        android:id="@+id/xCbDeclaration"
+        style="@style/checkbox_big_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/declaration_note"
+        app:layout_constraintBottom_toTopOf="@id/xBtnSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/xBtnSubmit"
+        style="@style/buttonStyleDisable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/ten"
+    android:padding="@dimen/twenty">
+
+    <TextView
+        android:id="@+id/xTvNote"
+        style="@style/textViewBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/please_verification_note" />
+
+    <TextView
+        android:id="@+id/xTvInfoValue"
+        style="@style/textViewBlackHead"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/xTvNote"
+        tools:text="Verification Id" />
+
+    <TextView
+        android:id="@+id/xTvGreetings"
+        style="@style/textViewBlack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/xTvInfoValue"
+        tools:text="@string/greetings_have_a_nice_day" />
+
+    <Button
+        android:id="@+id/xBtnPositive"
+        style="@style/buttonStyleEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/xTvGreetings"
+        tools:text="Positive" />
+
+    <Button
+        android:id="@+id/xBtnNegative"
+        style="@style/buttonLineStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/xBtnPositive"
+        app:layout_constraintTop_toBottomOf="@id/xTvGreetings"
+        tools:text="Negative" />
+</androidx.constraintlayout.widget.ConstraintLayout>

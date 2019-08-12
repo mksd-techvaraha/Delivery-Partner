@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/fifteen"
+    android:orientation="vertical">
+
+    <!-- todo constraint layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            android:contentDescription="@string/back_button"
+            android:src="@drawable/ic_btn_back" />
+
+        <TextView
+            style="@style/textViewHead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lets_get_started_with_your_kyc"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_head" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:contentDescription="@string/logo"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/xTilFName"
+        style="@style/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/name_as_on_aadhar_card"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/xEtFName"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/xTILAdharNumber"
+        style="@style/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/enter_your_aadhar_number"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/xEtAdharNumber"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:padding="@dimen/fifteen">
+
+        <TextView
+            style="@style/uploadIconStyle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/upload_front_side" />
+
+        <TextView
+            style="@style/uploadIconStyle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/upload_back_side" />
+
+
+    </LinearLayout>
+
+    <Button
+        style="@style/buttonStyleEnable"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/confirm" />
+
+</LinearLayout>

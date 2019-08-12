@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    tools:context="com.sunthemart.deliverypartner.view.ui.activity.MainActivity">
+
+    <include layout="@layout/home_content" />
+
+    <!-- Adding bottom sheet after main content -->
+    <include layout="@layout/bottom_sheet" />
+
+    <include
+        android:id="@+id/xProgressBar"
+        layout="@layout/widget_progress"
+        android:visibility="gone" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
