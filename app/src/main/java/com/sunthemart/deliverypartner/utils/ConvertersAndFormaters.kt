@@ -9,12 +9,10 @@ object ConvertersAndFormaters {
 
     fun getAddress(addressObject: JSONObject): String {
 
-        val address = addressObject.getString("House_no") + "," + addressObject.getString("Appartment_Name") + "," +
+
+        return addressObject.getString("House_no") + "," + addressObject.getString("Appartment_Name") + "," +
                 addressObject.getString("Street") + "," + addressObject.getString("Area") + " - " + addressObject.getString("Pincode") + "\nLandmark: " +
                 addressObject.getString("Landmark")
-
-
-        return address.take(75) + " ..."
     }
 
     fun getTimeInAmPm(input: String): String {

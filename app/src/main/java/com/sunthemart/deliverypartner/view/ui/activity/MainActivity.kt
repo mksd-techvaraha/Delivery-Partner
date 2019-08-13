@@ -93,16 +93,9 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
 
     private fun setUpViewPager() {
 
-        val density = resources.displayMetrics.density
-
-        val width = (8 * density) + (10 * density)
-
         orderListAdapter = OrderListAdapter(supportFragmentManager, orderList)
         mVpHomeBottomSheet.adapter = orderListAdapter
-        mVpHomeBottomSheet.pageMargin = 8 * density.toInt()
         mVpHomeBottomSheet.clipToPadding = false
-        mVpHomeBottomSheet.setPadding(width.toInt(), 0, width.toInt(), 0)
-
         orderListAdapter.notifyDataSetChanged()
     }
 
