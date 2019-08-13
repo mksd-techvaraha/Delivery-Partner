@@ -8,41 +8,25 @@
     android:gravity="center"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/ic_delivery_logo"/>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/twenty"
         app:cardCornerRadius="2dp"
         app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/white_translucent"
         app:cardPreventCornerOverlap="false"
         app:contentPadding="@dimen/twenty_five">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-
-            <TextView
-                android:id="@+id/textView"
-                style="@style/textViewHead"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
-                android:text="@string/namaskara_npartner"
-                app:layout_constraintEnd_toStartOf="@id/imageView"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/icon"
-                android:src="@mipmap/ic_launcher"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/textView"
-                app:layout_constraintTop_toTopOf="parent" />
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/xTILEmail"
@@ -54,7 +38,7 @@
                 app:errorEnabled="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/xEtEmail"
@@ -104,33 +88,18 @@
                 app:layout_constraintStart_toEndOf="@id/xBtnSignUp"
                 app:layout_constraintTop_toBottomOf="@id/xTILPassword" />
 
-            <TextView
-                style="@style/textViewBlack"
+            <Button
+                android:id="@+id/xTvOpenReg"
+                style="@style/buttonStyleDarkEnable"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/ten"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:gravity="end"
-                android:text="@string/want_to_become_a_partner"
-                app:layout_constraintEnd_toStartOf="@+id/xTvOpenReg"
-                app:layout_constraintHorizontal_bias="0.5"
+                android:text="@string/register_now"
+                android:onClick="openRegistration"
+                android:layout_marginTop="@dimen/eight"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/xBtnSignUp" />
 
-
-            <TextView
-                android:id="@+id/xTvOpenReg"
-                style="@style/textViewColor"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/ten"
-                android:layout_marginLeft="@dimen/ten"
-                android:layout_marginTop="@dimen/ten"
-                android:onClick="openRegistration"
-                android:text="@string/click_here"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/xBtnSignUp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

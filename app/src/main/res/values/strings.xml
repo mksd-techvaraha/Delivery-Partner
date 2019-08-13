@@ -10,7 +10,7 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-    <string name="want_to_become_a_partner">Want to become a partner?</string>
+    <string name="want_to_become_a_partner">Register</string>
     <string name="click_here">Click here</string>
     <string name="namaskara_npartner">Namaskara\nPartner !</string>
     <string name="become_a_partner_now">Become a Partner Now!</string>
@@ -21,13 +21,13 @@
     <string name="do_you_have_a_aadhar_card">Do you have a Aadhar card ?</string>
     <string name="register">Register</string>
     <string name="back_button">back button</string>
-    <string name="order_number">Order Number</string>
+    <string name="order_number">Order No: </string>
     <string name="delivery_address">Delivery Address</string>
-    <string name="delivery_before">Delivery Before</string>
+    <string name="delivery_before">Delivery Before: </string>
     <string name="dummy_address_2">#90/2, Purva Apt. Flat No C1, 13th Floor,Ganga Nagar, R T Nagar - 560064</string>
     <string name="see_details">See Details</string>
     <string name="home_page_note">Choose orders from below to start you day</string>
-    <string name="start_delivery">Start Delivery</string>
+    <string name="start_delivery">  Start Delivery  </string>
     <string name="get_direction">Get Direction</string>
     <string name="your_stock_point">Your stock point</string>
     <string name="no">No</string>
@@ -59,4 +59,5 @@
     <string name="item">Item</string>
     <string name="cash_note">Please collect cash from the customer</string>
     <string name="collect">Collect</string>
+    <string name="register_now">Register Now</string>
 </resources>

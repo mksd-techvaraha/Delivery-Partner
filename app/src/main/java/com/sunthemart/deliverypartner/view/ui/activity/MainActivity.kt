@@ -14,8 +14,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager.widget.ViewPager
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -49,7 +48,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
     private lateinit var mHomeMapView: GoogleMap
     private lateinit var mProgressBar: View
     private lateinit var bottomSheet: LinearLayout
-    private lateinit var mRecycHomeBottomSheet: RecyclerView
+    private lateinit var mVpHomeBottomSheet: ViewPager
     private lateinit var sheetBehavior: BottomSheetBehavior<LinearLayout>
     private val tag = "MainActivity"
     private lateinit var lastLocation: Location
@@ -92,10 +91,18 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
 
     }
 
-    private fun setUpRecycler() {
-        orderListAdapter = OrderListAdapter(orderList, this)
-        mRecycHomeBottomSheet.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        mRecycHomeBottomSheet.adapter = orderListAdapter
+    private fun setUpViewPager() {
+
+        val density = resources.displayMetrics.density
+
+        val width = (8 * density) + (10 * density)
+
+        orderListAdapter = OrderListAdapter(supportFragmentManager, orderList)
+        mVpHomeBottomSheet.adapter = orderListAdapter
+        mVpHomeBottomSheet.pageMargin = 8 * density.toInt()
+        mVpHomeBottomSheet.clipToPadding = false
+        mVpHomeBottomSheet.setPadding(width.toInt(), 0, width.toInt(), 0)
+
         orderListAdapter.notifyDataSetChanged()
     }
 
@@ -158,7 +165,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
         mProgressBar.visibility = View.VISIBLE
 
         marker?.title
-        setUpRecycler()
+        setUpViewPager()
         if (sheetBehavior.state != BottomSheetBehavior.STATE_EXPANDED) {
             sheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
         } else {
@@ -198,7 +205,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
         mTvPartnerName = findViewById(R.id.xTvPartnerName)
         mTvWorkingAreaCode = findViewById(R.id.xTvWorkingAreaCode)
         mIvDeliveryProfile = findViewById(R.id.xIvDeliveryProfile)
-        mRecycHomeBottomSheet = findViewById(R.id.xRecycHomeBottomSheet)
+        mVpHomeBottomSheet = findViewById(R.id.xVpHomeBottomSheet)
         mProgressBar = findViewById(R.id.xProgressBar)
     }
 

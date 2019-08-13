@@ -15,6 +15,7 @@
 
     <style name="DetailRTextTheme" parent="DetailTextThemeParent">
         <item name="android:textSize">@dimen/list_text_size</item>
+        <item name="android:fontFamily">@font/ropensans</item>
     </style>
 
     <style name="DetailTextThemeParent" parent="AppTheme">
@@ -70,6 +71,10 @@
         <item name="android:background">@drawable/bg_button</item>
         <item name="android:clickable">true</item>
     </style>
+    <style name="buttonStyleDarkEnable" parent="buttonStyle">
+        <item name="android:background">@drawable/bg_button_dark</item>
+        <item name="android:clickable">true</item>
+    </style>
 
     <style name="buttonLineStyle" parent="buttonStyle">
         <item name="android:background">@drawable/bg_line_button</item>
@@ -92,11 +97,11 @@
 
     <style name="checkbox" parent="textViewBlack">
         <item name="android:layout_margin">@dimen/five</item>
-        <item name="android:gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
 
     <style name="textViewColor" parent="textView">
-        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorAccent</item>
     </style>
 
 
@@ -106,10 +111,11 @@
 
     <style name="textViewHead" parent="AppTheme">
         <item name="android:gravity">center_vertical</item>
-        <item name="android:textSize">@dimen/thirty_text_size</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="textViewBlackHead" parent="textViewHead">
+
         <item name="android:textColor">@color/black</item>
     </style>
 

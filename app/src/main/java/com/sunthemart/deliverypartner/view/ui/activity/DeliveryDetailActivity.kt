@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -16,6 +17,7 @@ import com.sunthemart.deliverypartner.models.datamodels.OrderDetail
 import com.sunthemart.deliverypartner.models.datamodels.Product
 import com.sunthemart.deliverypartner.view.adapter.ProductListAdapter
 import com.sunthemart.deliverypartner.viewModel.OrderDetailList
+import kotlinx.android.synthetic.main.details_layout.*
 
 
 /**
@@ -48,7 +50,11 @@ class DeliveryDetailActivity : AppCompatActivity() {
     private lateinit var orderDetails: OrderDetail
 
     private lateinit var productListAdapter: ProductListAdapter
-    private lateinit var mProgressBar : View
+    private lateinit var mProgressBar: View
+    private lateinit var mIvBackButton: ImageView
+    private lateinit var mTvActionBarTitle: TextView
+    private lateinit var mTvActionBarSubTitle: TextView
+
     /**
      * OnCreate
      */
@@ -71,6 +77,9 @@ class DeliveryDetailActivity : AppCompatActivity() {
         mBtnStartDelivery.setOnClickListener {
             startDelivery()
         }
+        mIvBackButton.setOnClickListener{
+
+        }
     }
 
     private fun initWidget() {
@@ -78,9 +87,11 @@ class DeliveryDetailActivity : AppCompatActivity() {
         mRecycProductList = findViewById(R.id.xRecycProductList)
         mTvPaymentStatus = findViewById(R.id.xTvPaymentStatus)
         mBtnStartDelivery = findViewById(R.id.xBtnStartDelivery)
-
+        view1.visibility = View.GONE
         mTvOrderNum = mIncldDetails.findViewById(R.id.xTvOrderNum)
+        mTvOrderNum.visibility = View.GONE
         mTvDeliverTime = mIncldDetails.findViewById(R.id.xTvDeliverTime)
+        mTvDeliverTime.visibility = View.GONE
         mTvAdrsDialoge = mIncldDetails.findViewById(R.id.xTvAdrsDialoge)
         mTvCustomerName = mIncldDetails.findViewById(R.id.xTvCustName)
         mTvAdrsCustomer = mIncldDetails.findViewById(R.id.xTvAdrs)
@@ -91,6 +102,11 @@ class DeliveryDetailActivity : AppCompatActivity() {
         mTvTotalPrice = findViewById(R.id.xTvPrice)
         enableButton(false)
         mProgressBar = findViewById(R.id.xProgressBar)
+        mIvBackButton = findViewById(R.id.xIvUpButton)
+        mTvActionBarTitle = findViewById(R.id.xTvActionTitle)
+        mTvActionBarTitle.visibility = View.VISIBLE
+        mTvActionBarSubTitle = findViewById(R.id.xTvActionSubTitle)
+        mTvActionBarSubTitle.visibility = View.VISIBLE
 
     }
 
@@ -108,11 +124,11 @@ class DeliveryDetailActivity : AppCompatActivity() {
                 .observe(this, Observer<OrderDetail> { orderDetails ->
                     this.orderDetails = orderDetails
                     setUpRecycler(orderDetails.productList)
-                    mTvOrderNum.text = "Order# ${orderDetails.orderNo}"
-                    mTvDeliverTime.text = "Deliver before - ${orderDetails.deliverBeforeDate}"
+                    mTvActionBarTitle.text = "Order# ${orderDetails.orderNo}  "
+                    mTvActionBarSubTitle.text = "Deliver before - ${orderDetails.deliverBeforeDate}"
                     mTvAdrsDialoge.text = getString(R.string.hey_you)
                     mTvCustomerName.text = "${orderDetails.custName} is your customer"
-                    mTvAdrsCustomer.text = orderDetails.address
+                    mTvAdrsCustomer.text = "Address : ${orderDetails.address}"
                     /* Todo : can be used in started delivery activity
                     mBtnCallCustomer.setOnClickListener {
                         startActivity(Intent(Intent.ACTION_DIAL,Uri.parse(

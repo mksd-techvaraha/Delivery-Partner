@@ -3,12 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#efefef"
+    android:background="#ffffff"
     tools:context="com.sunthemart.deliverypartner.view.ui.activity.MainActivity">
+
 
     <include layout="@layout/content_delivery_started" />
 
     <!-- Adding bottom sheet after main content -->
-    <include layout="@layout/stock_bottom_sheet" />
+    <include layout="@layout/stock_bottom_sheet"/>
 
+    <include
+        android:id="@+id/xProgressBar"
+        layout="@layout/widget_progress"
+        android:visibility="gone" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -3,7 +3,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.google.gms.google-services'
 apply plugin: 'kotlin-kapt'
 
 android {
@@ -44,3 +43,5 @@ dependencies {
     implementation 'com.android.volley:volley:1.1.1'
     implementation "com.airbnb.android:lottie:$lottieVersion"
 }
+
+apply plugin: 'com.google.gms.google-services'

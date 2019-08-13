@@ -12,4 +12,6 @@
     <dimen name="twenty">15dp</dimen>
     <dimen name="thirty_text_size">20sp</dimen>
     <dimen name="eight">8dp</dimen>
+    <dimen name="action_bar_title_text_size">17sp</dimen>
+    <dimen name="action_bar_subtitle_text_size">12sp</dimen>
 </resources>

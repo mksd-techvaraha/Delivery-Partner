@@ -33,7 +33,9 @@ class DeliveryStartedActivity : AppCompatActivity(), OnMapReadyCallback, GoogleM
     private lateinit var mTvCustomerName: TextView
     // to be set as customer address
     private lateinit var mTvAdrsCustomer: TextView
+    // set customer phone number
     private lateinit var mBtnCallCustomer: Button
+    //set latitude and logitude of customer address
     private lateinit var mBtnCustomerDirection: Button
 
     private lateinit var mDeliveryStartedMapView: GoogleMap
@@ -47,10 +49,6 @@ class DeliveryStartedActivity : AppCompatActivity(), OnMapReadyCallback, GoogleM
     private lateinit var mBtnPositive: TextView
     private lateinit var mBtnNegative: TextView
 
-    private lateinit var mTvSPName: TextView
-    private lateinit var mBtnCallSp: Button
-    private lateinit var mTvSpAddress: TextView
-    private lateinit var mBtnGetSPDirection: Button
     private lateinit var mIncldGreetings: View
 
     private lateinit var sheetBehavior: BottomSheetBehavior<CardView>
@@ -67,46 +65,13 @@ class DeliveryStartedActivity : AppCompatActivity(), OnMapReadyCallback, GoogleM
         val mapFragment = supportFragmentManager
                 .findFragmentById(R.id.homeMapView) as SupportMapFragment
         mapFragment.getMapAsync(this)
-
-        sheetBehavior.setBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
-            override fun onStateChanged(bottomSheet: View, newState: Int) {
-                // React to state change
-                when (newState) {
-                    BottomSheetBehavior.STATE_HIDDEN -> {
-
-                    }
-                    BottomSheetBehavior.STATE_EXPANDED -> {
-
-                    }
-                    BottomSheetBehavior.STATE_COLLAPSED -> {
-
-                    }
-                    BottomSheetBehavior.STATE_DRAGGING -> {
-
-                    }
-                    BottomSheetBehavior.STATE_SETTLING -> {
-
-                    }
-                    BottomSheetBehavior.STATE_HALF_EXPANDED -> {
-
-                    }
-                }
-            }
-
-            override fun onSlide(bottomSheet: View, slideOffset: Float) {
-                // React to dragging events
-            }
-        })
     }
 
     private fun initWidgets() {
         mIncldCustomerDetails = findViewById(R.id.xIncldCustomerDetails)
         bottomSheet = findViewById(R.id.stock_bottom_sheet)
         mIncldStatus = findViewById(R.id.xIncldStatus)
-        mTvSPName = findViewById(R.id.xTvSPName)
-        mBtnCallSp = findViewById(R.id.xBtnCallSp)
-        mTvSpAddress = findViewById(R.id.xTvAddress)
-        mBtnGetSPDirection = findViewById(R.id.xBtnSeeDetails)
+
         mIncldGreetings = findViewById(R.id.xIncldGreetings)
         mTvOrderNum = mIncldCustomerDetails.findViewById(R.id.xTvOrderNum)
         mTvDeliverTime = mIncldCustomerDetails.findViewById(R.id.xTvDeliverTime)

@@ -19,28 +19,6 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:padding="@dimen/twenty">
-
-            <TextView
-                style="@style/textViewHead"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/ten"
-                android:text="@string/become_a_partner_now"
-                app:layout_constraintBottom_toTopOf="@+id/xTilFName"
-                app:layout_constraintEnd_toStartOf="@id/imageView4"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/xTilFName"
                 style="@style/textInputLayout"
@@ -51,7 +29,7 @@
                 app:errorEnabled="true"
                 app:layout_constraintEnd_toStartOf="@id/xTilLName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageView4">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/xEtFName"
@@ -70,7 +48,7 @@
                 app:errorEnabled="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/xTilFName"
-                app:layout_constraintTop_toBottomOf="@id/imageView4">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/xEtLName"
